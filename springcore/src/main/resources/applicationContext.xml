@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">
+
+
+    <context:component-scan base-package="com.faramarz.spring.springcore"/>
+
+
+    <bean id="xmlJdbcConnection" class="com.faramarz.spring.springcore.xmlconfig.XmlJdbcConnection">
+
+    </bean>
+
+    <!-- autowire XmlJdbcConnection into XmlDao class-->
+    <bean id="xmlDao" class="com.faramarz.spring.springcore.xmlconfig.XmlDao">
+        <property name="xmlJdbcConnection" ref="xmlJdbcConnection"/>
+    </bean>
+
+
+</beans>
