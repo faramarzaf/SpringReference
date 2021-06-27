@@ -38,45 +38,47 @@ public class ManyToManyController {
 
 
     /**
+
      * Post method sample
-     * {
-     *
-     * 	"title":"second post",
-     * 	"description":"java EE",
-     * 	"content":"hi this is content",
-     *
-     * 	"tags":[
-     *
-     *                {
-     * 			"name":"java",
-     * 				"articles":
-     * 				[
-     *                    {
-     * 			 		"title":"second post",
-     * 					"description":"java EE",
-     * 					"content":"hi this is content"
-     *                    },
-     *                    {
-     * 			 		"title":"third post",
-     * 					"description":"java SE",
-     * 					"content":"hi this is content"
-     *                    }
-     * 			 	]
-     *        },
-     *
-     *        {
-     * 			"name":"spring",
-     * 				"articles": [
-     *                    {
-     * 			 		"title":"forth post",
-     * 					"description":"spring boot",
-     * 					"content":"hi this is content"
-     *                    }
-     * 			 	]
-     *        }
-     *
-     * 		]
-     * }
+      {
+
+      	"title":"second post",
+      	"description":"java EE",
+      	"content":"hi this is content",
+
+      	"tags":[
+
+                     {
+      			"name":"java",
+      				"articles":
+      				[
+                         {
+      			 		"title":"second post",
+      					"description":"java EE",
+      					"content":"hi this is content"
+                         },
+                         {
+      			 		"title":"third post",
+      					"description":"java SE",
+      					"content":"hi this is content"
+                         }
+      			 	]
+             },
+
+             {
+      			"name":"spring",
+      				"articles": [
+                         {
+      			 		"title":"forth post",
+      					"description":"spring boot",
+      					"content":"hi this is content"
+                         }
+      			 	]
+             }
+
+     		]
+      }
+
      */
 
 
