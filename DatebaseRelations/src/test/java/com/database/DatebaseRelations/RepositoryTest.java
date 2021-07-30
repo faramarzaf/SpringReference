@@ -49,7 +49,21 @@ class RepositoryTest {
         System.out.println(studentList);
     }
 
+    @Test
+    public void printGetStudentByEmailAddress(){
+        Student student  = repository.getStudentByEmailAddress("sample@gmail.com");
+        System.out.println("student"+student);
+    }
 
+    @Test
+    public void printGetStudentFirstNameByEmailAddress(){
+        String firstName  = repository.getStudentFirstNameByEmailAddress("sample@gmail.com");
+        System.out.println("firstName "+firstName);
+    }
 
-
+    @Test
+    public void getStudentByEmailAddressNative(){
+        Student student  = repository.getStudentByEmailAddressNative("sample@gmail.com");
+        System.out.println("student  "+student);
+    }
 }
